@@ -224,13 +224,11 @@ namespace Eco.DiscordAccessMod
         public bool AuthorizeSession(LoginSession session)
         {
             // Check if there is an established link
-            Log.WriteLine(Localizer.DoStr("Checking Links..."));
             var linkQuery = this.config.Config.DiscordLinks.Where(l => l.EcoUsername.ToLower() == session.username.ToLower());
             if (!linkQuery.Any()) return false;
             var link = linkQuery.First();
 
             // Check the user is still in the server and has the proper role
-            Log.WriteLine(Localizer.DoStr("Checking User..."));
             SocketGuildUser discordUser = null;
             foreach (var guild in this.discordClient.Guilds)
             {
@@ -239,7 +237,6 @@ namespace Eco.DiscordAccessMod
             }
 
             if (discordUser == null) return false;
-            Log.WriteLine(Localizer.DoStr("Checking Roles..."));
             return discordUser.Roles.Where(r => this.config.Config.DiscordAccessRoles.Contains(r.Id)).Any();            
         }
     }
