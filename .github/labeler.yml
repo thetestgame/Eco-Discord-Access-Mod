@@ -1,0 +1,13 @@
+
+# Add the 'mod' label to any change to the primary mod projects/framework
+mod:
+- Eco.DiscordAccessMod/*
+
+# Add the 'devops' label to any change to the devops files
+devops:
+- .github/*
+
+# Add the 'documentation' label to any change to the documentation files
+documentation:
+- LICENSE
+- README.md

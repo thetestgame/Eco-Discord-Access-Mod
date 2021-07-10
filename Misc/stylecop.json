@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+    "settings": {
+      "documentationRules": {
+        "copyrightText": "Copyright (c) Jordan Maxwell. All rights reserved.\nThe Discord Access Mod for Eco is available under the MIT license.\nA copy of this license can be found in the repository root or at https://github.com/thetestgame/Eco-Discord-Access-Mod/blob/master/LICENSE",
+        "documentInterfaces": true,
+        "documentInternalElements": false,
+        "xmlHeader": false
+      }
+    }
+  }
